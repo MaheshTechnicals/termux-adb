@@ -63,13 +63,20 @@ echo ""
 
 # Check dependencies
 print_section "Dependencies"
-for cmd in curl wget gnupg termux-usb; do
+for cmd in curl wget gpg termux-usb; do
     if command -v $cmd &> /dev/null; then
         check_status 0 "$cmd is available"
     else
         check_status 1 "$cmd is missing"
     fi
 done
+
+# Check if gnupg package is installed (even if command is 'gpg')
+if dpkg -l | grep -q "^ii.*gnupg"; then
+    check_status 0 "gnupg package is installed"
+else
+    check_status 1 "gnupg package is missing"
+fi
 echo ""
 
 # Check repository configuration
