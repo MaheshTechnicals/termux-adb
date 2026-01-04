@@ -2,7 +2,7 @@
 
 Run adb and fastboot in Termux without root permissions!
 
-[![Version](https://img.shields.io/badge/version-2026-blue.svg)](https://github.com/nohajc/termux-adb)
+[![Version](https://img.shields.io/badge/version-2026-blue.svg)](https://github.com/MaheshTechnicals/termux-adb/tree/mt)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 
 ## Description
@@ -32,14 +32,14 @@ It should work with any USB-C male-to-male cable or the corresponding OTG adapte
 ### Quick Install (Recommended)
 
 ```bash
-curl -s https://raw.githubusercontent.com/nohajc/termux-adb/master/install.sh | bash
+curl -s https://raw.githubusercontent.com/MaheshTechnicals/termux-adb/mt/install.sh | bash
 ```
 
 ### Manual Install
 
 ```bash
 # Clone repository
-git clone https://github.com/nohajc/termux-adb.git
+git clone -b mt https://github.com/MaheshTechnicals/termux-adb.git
 cd termux-adb
 
 # Make scripts executable
@@ -235,9 +235,9 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Support
 
-- 📝 [Report Issues](https://github.com/nohajc/termux-adb/issues)
-- 💬 [Discussions](https://github.com/nohajc/termux-adb/discussions)
-- 📖 [Wiki](https://github.com/nohajc/termux-adb/wiki)
+- 📝 [Report Issues](https://github.com/MaheshTechnicals/termux-adb/issues)
+- 💬 [Discussions](https://github.com/MaheshTechnicals/termux-adb/discussions)
+- 📖 [Wiki](https://github.com/MaheshTechnicals/termux-adb/wiki)
 
 ---
 
